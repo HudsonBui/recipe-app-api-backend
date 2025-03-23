@@ -22,7 +22,7 @@ class AdminSiteTests(TestCase):
         self.client.force_login(self.admin_user)
 
         self.user = get_user_model().objects.create_user(
-            email="user@example.com",
+            email="test@example.com",
             password="testpass123",
             name="User"
         )
